@@ -1,0 +1,35 @@
+{
+	"useTabs": true,
+	"tabWidth": 1,
+	"editor.formatOnSave": true,
+	"proseWrap": "never",
+	"requireConfig": false,
+	"singleQuote": true,
+	"semi": true,
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"trailingComma": "none",
+	"printWidth": 80,
+	"plugins": ["prettier-plugin-svelte"],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": { "parser": "svelte" }
+		},
+		{
+			"files": "*.json",
+			"options": {
+				"parser": "jsonc",
+				"trailingComma": "none"
+			}
+		},
+		{
+			"files": ".prettierrc",
+			"options": { "parser": "json" }
+		},
+		{
+			"files": ".md",
+			"options": { "parser": "markdown" }
+		}
+	]
+}
